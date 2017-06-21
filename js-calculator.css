@@ -25,12 +25,13 @@ body, div, a {
 
 #numbers, #operators {
   margin: auto;
+
 }
 
 #operators a {
-  width: 46px;
-  height: 46px;
-  font-size: 39px;
+  width: 45px;
+  height: 37px;
+  font-size: 35px;
   padding: 10px;
   margin: 5px 6px;
   background: #FF7F50;
@@ -38,25 +39,27 @@ body, div, a {
 }
 
 #numbers a {
-  width: 46px;
-  height: 46px;
-  font-size: 35px;
+  width: 45px;
+  height: 37px;
+  font-size: 32px;
   padding: 10px;
   margin: 5px 6px;
   background-color: #FFFAFA;
   border-radius: 35px;
-
+top: 50%;
 }
 
 #result {
   height: 70px;
-  width: 300px;
+  width: 290px;
   margin:auto;
   background-color:#E6E6FA;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   text-align: right;
   font-size: 30px;
-  padding: 0px 5px;
+  padding-right: 7px;
+
   border-radius: 8px;
 }
 
@@ -66,10 +69,10 @@ body, div, a {
 }
 
 #side a {
-  width: 46px;
-  height: 46px;
+  width: 45px;
+  height: 37px;
   float: right;
-  font-size: 39px;
+  font-size: 35px;
   padding: 10px;
   margin: 5px 6px;
   background: #FF7F50;
@@ -77,6 +80,11 @@ body, div, a {
 }
 
 a#equal_button {
-  padding-top: 50px;
-  height: 81px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  height: 64px;
+}
+a#clearAll {
+  width: 120px;
+  height: 36px;
 }
