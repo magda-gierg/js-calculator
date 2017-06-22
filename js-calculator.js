@@ -1,17 +1,22 @@
 $(document).ready(function(){
-  
+
   var total = "0";
   var isLocked = true;
   $("#result").text(total);
   total="";
   $(".num_button").click(function () {
+    if ((total.length > 15)) {
+          total = total.replace(/.$/,$(this).text());
+          $("#result").text(total);
+        }
+        else{
     total = total + ($(this).text());
-    $("#result").text(total);
+    $("#result").text(total);}
     isLocked = true;
   });
 
   $(".function_button").click(function(){
-    if (isLocked == true){
+    if (isLocked === true){
       total = total + ($(this).text());
       $("#result").text(total);
       isLocked = false;}
@@ -22,7 +27,7 @@ $(document).ready(function(){
     });
 
     $("#equal_button").click(function(){
-      if (isLocked == true){
+      if (isLocked === true){
         $("#result").text(eval(total));
         total="";
         isLocked = false;
@@ -54,3 +59,11 @@ $(document).ready(function(){
     });
 
   });
+
+    // $(".num_button").click(function () {
+    // if ((total + ($(this).text()).length > 5)) {
+    //   $("#result").text(total);
+    //       total = total.replace(/.$/,$(this).text());
+    //       $("#result").text(total);
+    //     }
+    // };
